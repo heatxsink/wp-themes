@@ -42,18 +42,18 @@
 
 			<?php wp_list_pages('title_li=<h2></h2>'); ?>
 
-			<ul><a href="mailto:hello@crysinue.com">inspire me</a></ul>			
+			<ul><li><a href="mailto:hello@crysinue.com">inspire me</a></li></ul>
 
-			<ul><span class="title">--</span></ul>
+			<ul><li><span class="title">--</span></li></ul>
 
 			<?php wp_list_categories('title_li=<h2></h2>'); ?>
 
-			<ul><span class="title">--</span></ul>
+			<ul><li><span class="title">--</span></li></ul>
 
 			<ul><?php wp_get_archives('title_li=<h2></h2>&type=monthly'); ?></ul>
 
 			<?php /* If this is the frontpage */ if ( is_home() || is_page() ) { ?>
-				<ul><span class="title">--</span></ul>
+				<ul><li><span class="title">--</span></li></ul>
 				<?php wp_list_bookmarks('title_li=<h2></h2>&categorize=0'); ?>
 			<?php } ?>
 			<li>
@@ -62,9 +62,7 @@
 				</ul>
 			</li>
 			<li>
-				<ul>
-				<a class="syndicate" href="<?php bloginfo('rss2_url'); ?>" >RSS</a>
-				</ul>
+				<ul><li><a class="syndicate" href="<?php bloginfo('rss2_url'); ?>" >RSS</a></li></ul>
 			</li>
 			<?php endif; ?>
 		</ul>

@@ -67,13 +67,13 @@ a:hover
 /* width of the page */
 #page
 {
-	width: 900px;
+	width: 1024px;
 }
 
 /* width of the content area */
 #content
 {
-	width: 730px;
+	width: 830px;
 }
 
 /* width of the sidebar */
@@ -85,13 +85,13 @@ a:hover
 /* position of the header from the left edge */
 #headerimg
 {
-	margin-left:28%;
+	margin-left: 28%;
 }
 
 /* position of the footer from the left edge */
 #footer p
 {
-	padding-left:28%;
+	padding-left: 28%;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -294,9 +294,14 @@ h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar
 	text-transform: lowercase;
 }
 
-small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike
+#sidebar ul ul li, #sidebar ul ol li
 {
-	/*color: #777;*/
+	text-align: right;	
+}
+
+small, .nocomments, .postmetadata, blockquote, strike
+{
+	/* Left Empty */
 }
 
 code
@@ -896,7 +901,7 @@ a img
 
 .column2-1
 {
-	width: 500px;
+	width: 600px;
 	float: left;
 	margin-right: 10px;
 }

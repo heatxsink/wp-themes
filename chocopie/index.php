@@ -11,12 +11,23 @@
 				<div class="column2-1">
 					<a href="<?php the_permalink() ?>" target="_blank">
 						<?php
-							$single = true;
-							$key = 'image_url';
-							$image_url = get_post_meta($post->ID, $key, $single);
-							$img_tag = sprintf("<img width=\"500\" src=\"%s\" alt=\"image\" class=\"post-<?php the_ID(); ?>\" />", $image_url);
+							$custom_field_keys = get_post_custom_keys();
 							
-							echo $img_tag;
+							foreach ($custom_field_keys as $key => $value)
+							{
+								$image_key = trim($value);
+								
+								if ( '_' == $image_key{0} )
+								{
+									continue;
+								}
+								
+								$single = true;
+								$image_url = get_post_meta($post->ID, $image_key, $single);
+								$img_tag = sprintf("<img width=\"600\" src=\"%s\" alt=\"%s\" class=\"post-<?php the_ID(); ?>\" />", $image_url, $image_key);
+								
+								echo $img_tag;
+							}
 						?>
 					</a>
 				</div><!-- column2-1 -->
