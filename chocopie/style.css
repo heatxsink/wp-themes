@@ -67,7 +67,7 @@ a:hover
 /* width of the page */
 #page
 {
-	width: 1024px;
+	width: 975px;
 }
 
 /* width of the content area */
@@ -744,8 +744,8 @@ select
 /* begin sidebar */
 #sidebar
 {
-	padding: 1px 10px 10px 0;
-	margin-top:20px;
+	/*padding: 1px 10px 10px 0;*/
+	/*margin-top:20px;*/
 }
 
 #sidebar form
